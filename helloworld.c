@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char **argv){
-    printf("Hello World!");
+    FILE *f = fopen("HelloWorld.txt", "w");
+    fprintf(f, "Hello World!");
+    //printf("Hello World!");
+    fclose(f);
     return 0;
 }
